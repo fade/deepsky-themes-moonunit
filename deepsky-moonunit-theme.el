@@ -213,10 +213,10 @@ Theme-specific overrides take precedence over shared overrides."
      ;; Mode-line: SlateBlue4 active, DarkSlateGray inactive
      (bg-mode-line-active        "#473c8b")
      (fg-mode-line-active        "#f4f4f4")
-     (border-mode-line-active    "#a8a8a8")
+     (border-mode-line-active    unspecified)
      (bg-mode-line-inactive      "#2f4f4f")
      (fg-mode-line-inactive      "#bfc0c4")
-     (border-mode-line-inactive  "#3c3c3c")
+     (border-mode-line-inactive  unspecified)
 
      (modeline-err     "#ffa7ba")
      (modeline-warning "#dbbe5f")
