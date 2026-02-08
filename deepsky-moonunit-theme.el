@@ -257,7 +257,7 @@ Theme-specific overrides take precedence over shared overrides."
 
      ;; General mappings
 
-     (cursor fg-main)
+     (cursor yellow)
      (keybind magenta-cooler)
      (name magenta)
      (identifier yellow-faint)
