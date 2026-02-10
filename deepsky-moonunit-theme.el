@@ -93,8 +93,8 @@ Theme-specific overrides take precedence over shared overrides."
   (append
    '(
      ;; Basic values
-     ;; Pure black background for maximum contrast (deepsky-modus-fade)
-     (bg-main          "#000000")
+     ;; (bg-main          "#000000") ; pure black background (deepsky-modus-fade)
+     (bg-main          "#0d0e1c")
      (bg-dim           "#110b11")
      (fg-main          "#ffffff")
      (fg-dim           "#a8a8a8")
@@ -479,4 +479,5 @@ minimum contrast ratio)."
  'deepsky-moonunit-faces
  'deepsky-moonunit-custom-variables)
 
+(provide 'deepsky-moonunit-theme)
 ;;; deepsky-moonunit-theme.el ends here
