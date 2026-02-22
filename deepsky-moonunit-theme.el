@@ -203,7 +203,7 @@ Theme-specific overrides take precedence over shared overrides."
 
      ;; Special purpose
 
-     (bg-completion       "#483d8a")
+     (bg-completion       "#10387c")
      (bg-hover            "#45605e")
      (bg-hover-secondary  "#64404f")
      (bg-hl-line          "#151823")
@@ -433,6 +433,20 @@ exists in the palette and is associated with a HEX-VALUE.")
 
 (defconst deepsky-moonunit-faces
   '(
+;;;;; Completion
+    ;; modus-themes drops vertico's default :extend t; restore it so the
+    ;; selection highlight fills the full line width.  bg-completion is
+    ;; set to #10387c (deep navy) which gives ≥5:1 contrast against all
+    ;; four fg-completion-match-* colors on this background.
+    `(vertico-current ((,c :inherit modus-themes-completion-selected :extend t)))
+    ;; The legacy deepsky-theme.el sets completions-common-part with
+    ;; :background "black", which causes unreadable dark-on-dark match
+    ;; highlights in partial-completion narrowing (e.g. find-file).
+    ;; Override here with explicit colors to defeat that definition.
+    ;; blue-cooler (#00bcff) on bg-completion (#10387c) = 5.1:1 (WCAG AA).
+    `(completions-common-part ((,c :foreground ,blue-cooler :background unspecified :weight bold)))
+    ;; magenta-warmer (#f78fe7) on bg-completion (#10387c) = 5.3:1 (WCAG AA).
+    `(completions-first-difference ((,c :foreground ,magenta-warmer :background unspecified :weight bold)))
 ;;;;; SLY
     `(sly-mrepl-prompt-face ((,c :inherit modus-themes-prompt :foreground "#ffa500")))
     `(sly-mrepl-output-face ((,c :foreground ,slate)))
