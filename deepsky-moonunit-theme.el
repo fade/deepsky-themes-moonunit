@@ -93,7 +93,7 @@ Theme-specific overrides take precedence over shared overrides."
   (append
    '(
      ;; Basic values
-     ;; (bg-main          "#000000") ; pure black background (deepsky-modus-fade)
+     (bg-main          "#000000") ; pure black background (deepsky-modus-fade)
      (bg-main          "#0d0e1c")
      (bg-dim           "#110b11")
      (fg-main          "#ffffff")
@@ -257,7 +257,7 @@ Theme-specific overrides take precedence over shared overrides."
 
      ;; General mappings
 
-     (cursor yellow)
+     (cursor yellow1)
      (keybind magenta-cooler)
      (name magenta)
      (identifier yellow-faint)
@@ -286,10 +286,10 @@ Theme-specific overrides take precedence over shared overrides."
      ;; These are the heart of the deepsky-modus-fade overrides:
      ;; warm oranges, cyans, and yellows replace modus' purples/pinks.
 
-     (builtin gold)                      ; #ffaa00 (orange) - was magenta
+     (builtin orange)                      ; #ffaa00 (orange) - was magenta
      (comment cyan-faint)                ; Cyan tones - was red-faint
      (constant green-intense)            ; #00ff00 (bright green) - was magenta-cooler
-     (docstring yellow-faint)            ; light yellow tone
+     (docstring dark cyan)            ; Yellow strings
      (fnname slate)                      ; SteelBlue - was magenta-warmer
      (fnname-call pink)
      (keyword cyan)                      ; Cyan - was blue-warmer
