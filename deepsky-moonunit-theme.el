@@ -94,7 +94,7 @@ Theme-specific overrides take precedence over shared overrides."
    '(
      ;; Basic values
      (bg-main          "#000000") ; pure black background (deepsky-modus-fade)
-     (bg-main          "#0d0e1c")
+     ;; (bg-main          "#0d0e1c")
      (bg-dim           "#110b11")
      (fg-main          "#ffffff")
      (fg-dim           "#a8a8a8")
@@ -259,7 +259,8 @@ Theme-specific overrides take precedence over shared overrides."
 
      ;; General mappings
 
-     (cursor yellow1)
+     (cursor orange)
+     (set-face-foreground 'cursor "navy")
      (keybind magenta-cooler)
      (name magenta)
      (identifier yellow-faint)
