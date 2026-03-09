@@ -144,18 +144,20 @@ Theme-specific overrides take precedence over shared overrides."
      (rust       "#db8b3f")
      (gold       "#ffaa00")
      (olive      "#9cbd6f")
+     (purple     "#a020f0")
+     (dblue     " #1874cd")
      (slate      "#4682b4")
      (indigo     "#9099d9")
-     (maroon     "#cf7fa7")
-     (pink       "#d09dc0")
+     (maroon     "#8b1c62")
+     (pink       "#ee6aa7")
 
      ;; Common accent backgrounds
 
-     (bg-red-intense     "#a4202a")
-     (bg-green-intense   "#006800")
-     (bg-yellow-intense  "#874900")
-     (bg-blue-intense    "#2a40b8")
-     (bg-magenta-intense "#7042a2")
+     (bg-red-intense     "#ff0000")
+     (bg-green-intense   "#00ff00")
+     (bg-yellow-intense  "#ffff00")
+     (bg-blue-intense    "#006aff")
+     (bg-magenta-intense "#cd00cd")
      (bg-cyan-intense    "#005f88")
 
      (bg-red-subtle      "#762422")
