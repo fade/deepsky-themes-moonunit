@@ -259,7 +259,7 @@ Theme-specific overrides take precedence over shared overrides."
 
      ;; General mappings
 
-     (cursor orange)
+     (cursor yellow)
      (set-face-foreground 'cursor "navy")
      (keybind magenta-cooler)
      (name magenta)
@@ -290,18 +290,18 @@ Theme-specific overrides take precedence over shared overrides."
      ;; warm oranges, cyans, and yellows replace modus' purples/pinks.
 
      (builtin orange)                      ; #ffaa00 (orange) - was magenta
-     (comment cyan-faint)                ; Cyan tones - was red-faint
+     (comment cyan2)                ; Cyan tones - was red-faint
      (constant green-intense)            ; #00ff00 (bright green) - was magenta-cooler
      (docstring dark cyan)            ; Yellow strings
-     (fnname slate)                      ; SteelBlue - was magenta-warmer
+     (fnname SteelBlue)                      ; SteelBlue - was magenta-warmer
      (fnname-call pink)
-     (keyword cyan)                      ; Cyan - was blue-warmer
+     (keyword cyan3)                      ; Cyan - was blue-warmer
      (preprocessor red-cooler)
      (property cyan-warmer)
      (rx-backslash magenta-warmer)
      (rx-construct magenta-cooler)
-     (string yellow-intense)             ; #ffff00 (bright yellow) - was blue
-     (type cyan-cooler)                  ; was green-cooler
+     (string #ffff00)             ; #ffff00 (bright yellow) - was blue
+     (type modus-themes-fg-green-cooler)                  ; was green-cooler
      (variable cyan)                     ; Cyan - was cyan-warmer
      (variable-use slate)
 
