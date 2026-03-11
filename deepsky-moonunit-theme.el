@@ -436,6 +436,25 @@ exists in the palette and is associated with a HEX-VALUE.")
 
 (defconst deepsky-moonunit-faces
   '(
+
+;;;;; FONTLOCK FACES (overrides pretty much all the other theme machinery)
+    '(font-lock-builtin-face ((t (:foreground "#ffaa00"))))
+    '(font-lock-comment-delimiter-face ((t (:foreground "Cyan3"))))
+    '(font-lock-comment-face ((t (:foreground "Cyan2"))))
+    '(font-lock-constant-face ((t (:foreground "#00ff00"))))
+    '(font-lock-doc-face ((t (:foreground "#Ffffe0"))))
+    '(font-lock-function-name-face ((t (:foreground "SteelBlue"))))
+    '(font-lock-keyword-face ((t (:foreground "Cyan3"))))
+    '(font-lock-negation-char-face ((t (nil))))
+    '(font-lock-preprocessor-face ((t (nil))))
+    '(font-lock-regexp-grouping-backslash ((t (:bold t :weight bold))))
+    '(font-lock-regexp-grouping-construct ((t (:bold t :weight bold))))
+    '(font-lock-string-face ((t (:foreground "#ffff00"))))
+    '(font-lock-type-face ((t (nil))))
+    '(font-lock-variable-name-face ((t (:foreground "cyan"))))
+    '(font-lock-warning-face ((t (:bold t :foreground "Red" :weight bold))))
+;;; /fontlock faces
+
 ;;;;; Completion
     ;; modus-themes drops vertico's default :extend t; restore it so the
     ;; selection highlight fills the full line width.  bg-completion is
@@ -450,6 +469,11 @@ exists in the palette and is associated with a HEX-VALUE.")
     `(completions-common-part ((,c :foreground ,blue-cooler :background unspecified :weight bold)))
     ;; magenta-warmer (#f78fe7) on bg-completion (#10387c) = 5.3:1 (WCAG AA).
     `(completions-first-difference ((,c :foreground ,magenta-warmer :background unspecified :weight bold)))
+;;;;; iSearch
+    '(isearch ((((class color) (min-colors 89)) :inherit (deepsky-theme-intense-green bold))))
+    '(isearch-fail ((((class color) (min-colors 89)) :inherit deepsky-theme-refine-red)))
+    '(popup-isearch-match ((((class color) (min-colors 89)) :inherit (deepsky-theme-refine-cyan bold))))
+    
 ;;;;; all-the-icons
     `(all-the-icons-blue ((,c :foreground ,blue-cooler)))
     `(all-the-icons-blue-alt ((,c :foreground ,blue-warmer)))
