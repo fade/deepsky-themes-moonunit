@@ -453,6 +453,27 @@ exists in the palette and is associated with a HEX-VALUE.")
     '(font-lock-type-face ((t (nil))))
     '(font-lock-variable-name-face ((t (:foreground "cyan"))))
     '(font-lock-warning-face ((t (:bold t :foreground "Red" :weight bold))))
+;;;;; the rest of the stuff from custom.el
+
+    '(avy-lead-face ((t (:background "medium blue" :foreground "yellow"))))
+    '(avy-lead-face-2 ((t (:background "dark turquoise" :foreground "midnight blue"))))
+    '(company-scrollbar-bg ((t (:background "#199919991999"))) t)
+    '(company-scrollbar-fg ((t (:background "#0ccc0ccc0ccc"))) t)
+    '(company-tooltip ((t (:inherit default :background "#051e051e051e"))))
+    '(company-tooltip-common ((t (:inherit font-lock-constant-face))))
+    '(company-tooltip-scrollbar-thumb ((t (:background "#0ccc0ccc0ccc"))))
+    '(company-tooltip-scrollbar-track ((t (:background "#199919991999"))))
+    '(company-tooltip-selection ((t (:inherit font-lock-function-name-face))))
+    '(erc-input-face ((t (:foreground "spring green"))))
+    '(erc-my-nick-face ((t (:foreground "magenta" :weight bold))))
+    '(helm-bookmark-directory ((t (:inherit helm-ff-directory))))
+    '(helm-buffer-directory ((t (:inherit helm-ff-directory))))
+    '(helm-selection ((t (:extend t :background "cadet blue" :distant-foreground "black"))))
+    '(isearch ((t (:background "#ffff00" :foreground "blue"))))
+    '(isearch-group-2 ((t (:background "dim gray" :foreground "yellow"))))
+    '(magit-diff-removed-highlight ((t (:extend t :background "#008b8b" :foreground "#ffffff"))))
+    '(org-modern-tag ((t (:inherit (secondary-selection org-modern-label) :background "yellow" :foreground "blue"))))
+    
 ;;; /fontlock faces
 
 ;;;;; Completion
