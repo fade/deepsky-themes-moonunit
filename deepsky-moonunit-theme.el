@@ -209,6 +209,7 @@ Theme-specific overrides take precedence over shared overrides."
      (bg-hover            "#45605e")
      (bg-hover-secondary  "#64404f")
      (bg-hl-line          "#151823")
+     (bg-popup            "#14162c")
      (bg-region           "#3c3c3c")
      (fg-region           "#ffffff")
 
