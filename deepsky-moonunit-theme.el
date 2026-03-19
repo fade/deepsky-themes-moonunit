@@ -472,7 +472,8 @@ exists in the palette and is associated with a HEX-VALUE.")
     '(helm-selection ((t (:extend t :background "cadet blue" :distant-foreground "black"))))
     '(isearch ((t (:background "#ffff00" :foreground "blue"))))
     '(isearch-group-2 ((t (:background "dim gray" :foreground "yellow"))))
-    '(magit-diff-removed-highlight ((t (:extend t :background "#008b8b" :foreground "#ffffff"))))
+    '(magit-diff-removed-highlight ((t (:extend t :background "goldenrod" :foreground "#a520d9"))))
+    '(magit-diff-added-highlight ((t (:extend t :background "#00bfff" :forground "#333333"))))
     '(org-modern-tag ((t (:inherit (secondary-selection org-modern-label) :background "yellow" :foreground "blue"))))
     
 ;;; /fontlock faces
