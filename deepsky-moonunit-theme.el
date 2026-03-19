@@ -24,7 +24,7 @@
 
 ;;; Commentary:
 ;;
-;; Deepsky Moonunit is a dark theme built on the Modus themes
+;; DeepSky Moonunit is a dark theme built on the Modus themes
 ;; infrastructure (specifically modus-vivendi-tinted) and tuned for
 ;; anomalous trichromatic color vision.  It inherits the full face
 ;; coverage and WCAG AAA contrast guarantees from the Modus themes,
@@ -59,7 +59,7 @@ Built on the Modus themes infrastructure with WCAG AAA contrast."
   :group 'modus-themes
   :link '(url-link :tag "GitHub" "https://github.com/fade/deepsky-themes-moonunit")
   :prefix "deepsky-moonunit-"
-  :tag "Deepsky Moonunit")
+  :tag "DeepSky Moonunit")
 
 (defcustom deepsky-moonunit-palette-user nil
   "Like `deepsky-moonunit-palette' for user-defined entries.
@@ -441,7 +441,7 @@ exists in the palette and is associated with a HEX-VALUE.")
 ;;;;; FONTLOCK FACES (overrides pretty much all the other theme machinery)
     '(font-lock-builtin-face ((t (:foreground "#ffaa00"))))
     '(font-lock-comment-delimiter-face ((t (:foreground "cyan3"))))
-    '(font-lock-comment-face ((t (:foreground "cyan2"))))
+    '(font-lock-comment-face ((t (:italic t :foreground "cyan2"))))
     '(font-lock-constant-face ((t (:foreground "#00ff00"))))
     '(font-lock-doc-face ((t (:foreground "#Ffffe0"))))
     '(font-lock-function-name-face ((t (:foreground "SteelBlue"))))
